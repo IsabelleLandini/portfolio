@@ -1,11 +1,11 @@
-
-import './App.css'
+import './App.css';
+import About from './components/about/about';
 
 function App() {
 
   return (
     <main>
-      <h1>Olá!</h1>
+      <About />
     </main>
   )
 }
