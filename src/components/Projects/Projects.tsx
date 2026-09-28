@@ -15,6 +15,7 @@ function Projects() {
                     technologies={project.technologies}
                     image={project.image}
                     github={project.github}
+                    demo={project.demo}
                 />
             ))}
         </section>
