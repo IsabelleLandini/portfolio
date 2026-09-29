@@ -4,6 +4,7 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
 import Navigation from './components/Navigation/Navigation';
+import VoltarAoTopo from './components/BackToTop/BackToTop';
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
       <Projects />
       <Skills />
       <Contact />
+
+      <VoltarAoTopo />
     </main>
   )
 }
