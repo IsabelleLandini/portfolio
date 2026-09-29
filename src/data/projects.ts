@@ -13,6 +13,7 @@ const projects = [
             "GitHub Actions"
         ],
         image: "/images/projects/portal-viagens.jpg",
+        screenshot: "/images/projects/portal-viagens-screenshot.png",
         github: "https://github.com/IsabelleLandini/portal-viagens-nextjs",
         demo: "https://portal-viagens-nextjs.vercel.app/"
     },
@@ -28,6 +29,7 @@ const projects = [
             "LocalStorage"
         ],
         image: "/images/projects/diario-de-bordo.jpg",
+        screenshot: "/images/projects/diario-de-bordo-screenshot.png",
         github: "https://github.com/IsabelleLandini/diario-de-bordo"
     },
     {
@@ -40,6 +42,7 @@ const projects = [
             "CSS3"
         ],
         image: "/images/projects/catalogo-livros.jpg",
+        screenshot: "/images/projects/catalogo-livros-screenshot.png",
         github: "https://github.com/IsabelleLandini/catalogo-livros-typescript"
     },
     {
@@ -56,6 +59,7 @@ const projects = [
             "GitHub Actions"
         ],
         image: "/images/projects/pokemon-api.jpg",
+        screenshot: "/images/projects/pokemon-api-screenshot.png",
         github: "https://github.com/IsabelleLandini/pokemon-api",
         demo: "https://pokemon-api-u9so.onrender.com/docs"
     }

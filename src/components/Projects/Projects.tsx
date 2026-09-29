@@ -14,6 +14,7 @@ function Projects() {
                     description={project.description}
                     technologies={project.technologies}
                     image={project.image}
+                    screenshot={project.screenshot}
                     github={project.github}
                     demo={project.demo}
                 />
