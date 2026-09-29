@@ -5,11 +5,11 @@ function Contact() {
             <h2>Contato</h2>
 
             <p>
-               📧 <a href="mailto:isa_landini@hotmail.com">E-mail</a>
+               <a href="mailto:isa_landini@hotmail.com">E-mail</a>
             </p>
 
             <p>
-                💼 <a 
+                <a 
                     href="https://www.linkedin.com/in/isabellelandini/" 
                     target="_blank" 
                     rel="noopener noreferrer">
@@ -18,7 +18,7 @@ function Contact() {
             </p>
 
             <p>
-                🐙 <a 
+                <a 
                     href="https://github.com/IsabelleLandini" 
                     target="_blank" 
                     rel="noopener noreferrer">
