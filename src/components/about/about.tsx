@@ -1,7 +1,11 @@
 function About() {
     return (
         <section id="about">
-            <img src="/images/profile/isabelle.jpeg" alt="Foto de Isabelle Landini" />
+            <img 
+                src="/images/profile/isabelle.jpeg" 
+                alt="Foto de Isabelle Landini" 
+                className="profile-image"
+            />
             
             <h2>Sobre Mim</h2>
 
