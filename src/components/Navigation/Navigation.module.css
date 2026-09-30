@@ -1,0 +1,38 @@
+
+.navigation {
+    background-color: #31255e;
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.identity h1 {
+    color: #ffffff;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.identity p {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.links {
+    display: flex;
+    gap: 28px;
+}
+
+.links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.links a:hover {
+    color: #A855F7;
+}
