@@ -1,6 +1,8 @@
+import styles from "./ProjectCard.module.css";
 
 interface ProjectCardProps {
     title: string
+    date: string
     description: string
     technologies: string[]
     image: string
@@ -11,6 +13,7 @@ interface ProjectCardProps {
 
 function ProjectCard({
     title,
+    date,
     description,
     technologies,
     image,
@@ -19,28 +22,42 @@ function ProjectCard({
     demo
 }: ProjectCardProps) {
     return(
-        <article>
-            <img 
-                src={image} 
-                alt={title}
-                className="project-image" 
-            />
+        <article className={styles.card}>
+            {/* Organiza as informações principais do projeto em um card vertical */}
+            <div className={styles.projectInfo}>
+                <img 
+                    src={image} 
+                    alt={title}
+                    className={styles.coverImage}
+                />
 
-            <h3>{title}</h3>
+                <div className={styles.projectContent}>
+                        
+                    <div className={styles.projectHeader}>
+                        <h3>{title}</h3>   
+                        <p className={styles.date}>{date}</p> 
+                    </div>
 
-            <p>{description}</p>
+                    <p>{description}</p>
 
-            <img 
-                src={screenshot} 
-                alt={title} 
-                className="project-image"
-            />
+                    <div className={styles.technologies}>
+                        {technologies.map((technology) => (
+                                <span
+                                    key={technology}
+                                    className={styles.technology}
+                                >
+                                    {technology}
+                                </span>
+                        ))}
+                    </div>
 
-            <p>{technologies.join(" • ")}</p>
+                    <div className={styles.links}>
 
-            <a href={github}>Github</a>
+                        <a href="#">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
 
-            {demo && <a href={demo}>Ver Projeto</a>}
         </article>
     )
 }

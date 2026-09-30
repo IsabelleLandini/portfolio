@@ -2,15 +2,13 @@
 const projects = [
     {
         title: "Portal Viagens",
-        description: "Portal de destinos turísticos desenvolvido com Next.js, React e TypeScript, com rotas estáticas e dinâmicas, componentização, CSS Modules, testes automatizados e otimização de imagens.",
+        date: "Jun 2026",
+        description: "Portal para explorar destinos turísticos e conhecer diferentes opções de viagem.",
         technologies: [
             "Next.js",
             "React",
             "TypeScript",
-            "CSS Modules",
-            "Jest",
-            "Testing Library",
-            "GitHub Actions"
+            "Jest"
         ],
         image: "/images/projects/portal-viagens.jpg",
         screenshot: "/images/projects/portal-viagens-screenshot.png",
@@ -19,13 +17,13 @@ const projects = [
     },
     {
         title: "Diário de Bordo",
-        description: "Aplicação web desenvolvida como PWA para registrar e consultar atividades do dia a dia, com armazenamento local e funcionamento offline.",
+        date: "Set 2026",
+        description: "Aplicação para registrar, organizar e consultar atividades do dia a dia.",
         technologies: [
             "HTML5",
             "CSS3",
             "JavaScript",
             "PWA",
-            "Service Worker",
             "LocalStorage"
         ],
         image: "/images/projects/diario-de-bordo.jpg",
@@ -34,7 +32,8 @@ const projects = [
     },
     {
         title: "Catálogo de Livros",
-        description: "Aplicação web desenvolvida com React e TypeScript para gerenciamento de livros, com operações de adicionar, listar, atualizar status e excluir registros.",
+        date: "Mai 2026",
+        description: "Aplicação para organizar e gerenciar uma coleção de livros de forma simples.",
         technologies: [
             "React",
             "TypeScript",
@@ -47,16 +46,15 @@ const projects = [
     },
     {
         title: "Pokémon API",
-        description: "API RESTful desenvolvida com Python e FastAPI, integrada à PokeAPI, com CRUD, persistência em banco de dados, paginação, cache com Redis, autenticação por API Key, testes automatizados, Docker e CI/CD.",
+        date: "Jun 2026",
+        description: "API para gerenciamento de dados de Pokémon, com operações de criação, edição e consulta." ,
         technologies: [
             "Python",
             "FastAPI",
-            "Pydantic",
             "SQLAlchemy",
             "Redis",
             "Pytest",
-            "Docker",
-            "GitHub Actions"
+            "Docker"
         ],
         image: "/images/projects/pokemon-api.jpg",
         screenshot: "/images/projects/pokemon-api-screenshot.png",

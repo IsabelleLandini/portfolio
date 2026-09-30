@@ -1,0 +1,22 @@
+
+.projects {
+    background-color: #31255e;
+    padding: 32px;
+    max-width: 1100px;
+    margin: 40px auto;
+    border: 2px solid #A855F7;
+    border-radius: 16px;
+}
+
+.projects h2 {
+    color: #A855F7;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
