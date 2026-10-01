@@ -1,4 +1,5 @@
 import styles from "./ProjectCard.module.css";
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectCardProps {
     title: string
@@ -6,9 +7,8 @@ interface ProjectCardProps {
     description: string
     technologies: string[]
     image: string
-    screenshot: string
     github: string
-    demo?: string
+    onViewDetails: () => void
 }
 
 function ProjectCard({
@@ -17,9 +17,8 @@ function ProjectCard({
     description,
     technologies,
     image,
-    screenshot,
     github,
-    demo
+    onViewDetails
 }: ProjectCardProps) {
     const visibleTechnologies = technologies.slice(0, 5);
     const remainingTechnologies = technologies.length - visibleTechnologies.length;
@@ -62,7 +61,18 @@ function ProjectCard({
 
                     <div className={styles.links}>
 
-                        <a href="#">Ver Detalhes</a>
+                        <button onClick={onViewDetails}>
+                            Detalhes
+                        </button>
+
+                        <a
+                            href={github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaGithub />
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </div>
