@@ -21,6 +21,9 @@ function ProjectCard({
     github,
     demo
 }: ProjectCardProps) {
+    const visibleTechnologies = technologies.slice(0, 5);
+    const remainingTechnologies = technologies.length - visibleTechnologies.length;
+
     return(
         <article className={styles.card}>
             {/* Organiza as informações principais do projeto em um card vertical */}
@@ -41,7 +44,7 @@ function ProjectCard({
                     <p>{description}</p>
 
                     <div className={styles.technologies}>
-                        {technologies.map((technology) => (
+                        {visibleTechnologies.map((technology) => (
                                 <span
                                     key={technology}
                                     className={styles.technology}
@@ -49,6 +52,12 @@ function ProjectCard({
                                     {technology}
                                 </span>
                         ))}
+
+                        {remainingTechnologies > 0 && (
+                            <span className={styles.technology}>
+                                +{remainingTechnologies}
+                            </span>
+                        )}
                     </div>
 
                     <div className={styles.links}>
