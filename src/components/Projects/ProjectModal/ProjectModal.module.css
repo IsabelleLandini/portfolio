@@ -48,11 +48,11 @@
 }
 
 .screenshot {
-    width: 100%;
+    width: 85%;
     height: auto;
     display: block;
+    margin: 0 auto 28px;
     border-radius: 8px;
-    margin-bottom: 28px;
 }
 
 .description {
@@ -101,7 +101,7 @@
     position: absolute;
     left: 0;
     color: #A855F7;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .modalLinks {
