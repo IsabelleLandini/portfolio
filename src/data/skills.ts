@@ -1,54 +1,66 @@
 
 const skills = {
-    habilidades: [
+    linguagens: [
         "Python",
+        "JavaScript",
+        "TypeScript",
+        "HTML/CSS",
+        "SQL"
+    ],
+    backend: [
         "FastAPI",
-        "APIs REST",
-        "SQL",
         "SQLAlchemy",
         "Pydantic",
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "HTML5",
-        "CSS3",
-        "Next.js",
-        "Git",
-        "GitHub",
-        "Docker",
-        "Docker Compose",
-        "Pytest",
-        "Jest",
-        "Testing Library"
-    ],
-    conhecimentos: [
+        "APIs REST",
+        "SQLite",
         "Redis",
         "Celery",
-        "Apache Kafka",
+        "Apache Kafka"
+    ],
+
+    frontend: [
+        "React",
+        "Next.js",
         "Vite",
         "CSS Modules",
-        "Context API",
-        "Hooks",
-        "Testes automatizados",
-        "CI/CD",
-        "GitHub Actions",
-        "PWA",
-        "LocalStorage",
-        "Autenticação por API Key",
-        "Paginação",
-        "Arquitetura em camadas",
-        "Swagger / OpenAPI",
-        "Ruff",
-        "Deploy",
-        "Variáveis de ambiente",
-        "DevOps"
+        "React Hooks",
+        "Axios"
     ],
-    nocoes: [
-        "Metodologias Ágeis",
-        "Scrum",
-        "Kanban",
-        "Cultura Ágil"
+
+    cloudDevOps: [
+        "Docker",
+        "Docker Compose",
+        "GitHub Actions",
+        "CI/CD"
+    ],
+
+    testesQualidade: [
+        "Pytest",
+        "Jest",
+        "Testing Library",
+        "Ruff"
+    ],
+
+    ferramentas: [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Postman",
+        "Insomnia",
+        "Swagger / OpenAPI",
+        "Vercel",
+        "Render"
+    ],
+
+    softSkills: [
+        "Comunicação",
+        "Trabalho em equipe",
+        "Organização",
+        "Adaptabilidade",
+        "Resolução de problemas",
+        "Pensamento analítico",
+        "Aprendizado contínuo"
     ]
 }
 
-export default skills
+export default skills;
