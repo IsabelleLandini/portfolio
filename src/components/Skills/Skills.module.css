@@ -58,3 +58,9 @@
     height: 1px;
     background-color: rgba(168, 85, 247, 0.4);
 }
+
+@media (max-width: 600px) {
+    .category h3 {
+        font-size: 1rem;
+    }
+}

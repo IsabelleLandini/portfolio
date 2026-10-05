@@ -36,3 +36,36 @@
 .links a:hover {
     color: #A855F7;
 }
+
+@media (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .identity {
+        width: 100%;
+        text-align: center;
+    }
+
+    .identity p {
+        white-space: normal;
+        font-size: 0.85rem;
+    }
+
+    .links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width:900px) {
+    .identity p {
+        font-size: 0.85rem;
+    }
+
+    .navigation {
+        gap: 24px;
+    }
+}

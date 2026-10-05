@@ -1,5 +1,6 @@
 
 .card {
+    display: flex;
     background-color: #4A4373;
     padding: 24px;
     border-radius: 12px;
@@ -29,7 +30,8 @@
 .projectContent {
     flex: 1;
     min-width: 0;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .projectHeader {
@@ -84,6 +86,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     width: 100%;
+    margin-top: auto;
 }
 
 .links button,
@@ -124,3 +127,16 @@
     border-radius: 12px;
 }
 
+@media (max-width: 600px) {
+    .date {
+        position: static;
+        margin-top: 4px;
+    }
+}
+
+@media (min-width: 610px) and (max-width: 900px) {
+    .date {
+        position: static;
+        margin-top: 4px;
+    }
+}

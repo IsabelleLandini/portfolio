@@ -56,3 +56,23 @@
 .contactLinks a:hover {
     transform: translateY(-5px);
 }
+
+@media (max-width: 600px) {
+    .aboutContainer {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .aboutImage {
+        width: 60%;
+    }
+
+    .aboutContent {
+        text-align: center;
+    }
+
+    .contactLinks {
+        justify-content: center;
+    }
+}
