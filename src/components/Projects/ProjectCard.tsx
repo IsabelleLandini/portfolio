@@ -23,13 +23,13 @@ function ProjectCard({
     const visibleTechnologies = technologies.slice(0, 5);
     const remainingTechnologies = technologies.length - visibleTechnologies.length;
 
-    return(
+    return (
         <article className={styles.card}>
             {/* Organiza as informações principais do projeto em um card vertical */}
             <div className={styles.projectInfo}>
                 <img 
                     src={image} 
-                    alt={title}
+                    alt={`Capa do projeto ${title}`}
                     className={styles.coverImage}
                 />
 
@@ -78,7 +78,7 @@ function ProjectCard({
             </div>
 
         </article>
-    )
+    );
 }
 
 export default ProjectCard

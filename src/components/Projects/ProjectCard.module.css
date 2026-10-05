@@ -14,7 +14,6 @@
 
 .coverImage {
     width: 100%;
-    max-width: none;
     height: 180px;
     object-fit: cover;
     border-radius: 12px;
@@ -86,6 +85,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     width: 100%;
+    /* Mantém os botões alinhados na parte inferior dos cards. */
     margin-top: auto;
 }
 
@@ -127,14 +127,8 @@
     border-radius: 12px;
 }
 
-@media (max-width: 600px) {
-    .date {
-        position: static;
-        margin-top: 4px;
-    }
-}
-
-@media (min-width: 610px) and (max-width: 900px) {
+/* Em telas menores, a data acompanha o título no fluxo do conteúdo. */
+@media (max-width: 900px) {
     .date {
         position: static;
         margin-top: 4px;

@@ -154,3 +154,10 @@
     color: #ffffff;
     transform: scale(1.1);
 }
+
+/* Reduz o título no mobile para evitar quebra em telas estreitas. */
+@media (max-width: 600px) {
+    .modal h2 {
+        font-size: 1rem;
+    }
+}
