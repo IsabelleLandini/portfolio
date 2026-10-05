@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
+import styles from "./BackToTop.module.css";
 
 function VoltarAoTopo() {
     const [estaVisivel, setEstaVisivel] = useState(false);
@@ -16,7 +18,7 @@ function VoltarAoTopo() {
         };
     }, []);
 
-    function VoltarAoTopo() {
+    function rolarParaOTopo() {
         window.scrollTo({
             top:0,
             behavior: "smooth"
@@ -28,8 +30,11 @@ function VoltarAoTopo() {
     }
 
     return (
-        <button onClick={VoltarAoTopo}>
-            ↑ Voltar ao topo
+        <button 
+            onClick={rolarParaOTopo}
+            className={styles.backToTop}
+        >
+            <FaArrowUp />
         </button>
     );
 }
