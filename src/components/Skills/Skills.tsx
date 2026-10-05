@@ -11,7 +11,13 @@ import {
     FaSyncAlt,
     FaPuzzlePiece,
     FaSearch,
-    FaBook
+    FaBook,
+    FaCode,
+    FaDatabase,
+    FaDesktop,
+    FaCloud,
+    FaVial,
+    FaTools
 } from "react-icons/fa";
 
 import { 
@@ -43,6 +49,8 @@ import {
 } from "react-icons/si";
 
 import type { IconType } from "react-icons";
+
+import styles from "./Skills.module.css"
 
 const skillIcons: Record<string, IconType> = {
     Python: FaPython,
@@ -85,41 +93,48 @@ const skillIcons: Record<string, IconType> = {
 
 function Skills() {
     const categories = [
-        {title: "Linguagens", skills: skills.linguagens},
-        {title: "Backend & Banco de Dados", skills: skills.backend},
-        {title: "Frontend", skills: skills.frontend},
-        {title: "Cloud & DevOps", skills: skills.cloudDevOps},
-        {title: "Testes & Qualidade", skills: skills.testesQualidade},
-        {title: "Ferramentas & Plataformas", skills: skills.ferramentas},
-        {title: "Soft Skills", skills: skills.softSkills}
+        {title: "Linguagens", skills: skills.linguagens, icon: FaCode},
+        {title: "Backend & Banco de Dados", skills: skills.backend, icon: FaDatabase},
+        {title: "Frontend", skills: skills.frontend, icon: FaDesktop},
+        {title: "Cloud & DevOps", skills: skills.cloudDevOps, icon: FaCloud},
+        {title: "Testes & Qualidade", skills: skills.testesQualidade, icon: FaVial},
+        {title: "Ferramentas & Plataformas", skills: skills.ferramentas, icon: FaTools},
+        {title: "Soft Skills", skills: skills.softSkills, icon: FaUsers}
     ];
 
     return (
-        <section id="skills">
+        <section id="skills" className={styles.skillsSection}>
             <h2>Habilidades</h2>
 
             {/* Organiza as categorias para que possam ser renderizadas de forma reutilizável */}
-            {categories.map((category) => (
-                <div key={category.title}  >
-                    <h3>{category.title}</h3>
+            {categories.map((category) => {
+                const CategoryIcon = category.icon;
 
-                    {category.skills.map((skill) => {
-                        // Busca o ícone correspondente à habilidade e renderiza apenas quando ele estiver cadastrado.
-                        const Icon = skillIcons[skill];
+                return (
+                    <div key={category.title} className={styles.category}>
+                        <h3>
+                            <CategoryIcon />
+                            {category.title}
+                        </h3>
 
-                        return (
-                            <span key={skill}>
-                                {Icon && <Icon />}
-                                {skill}
-                            </span>
-                        )
+                        <div className={styles.skills}>
+                            {category.skills.map((skill) => {
+                                // Busca o ícone correspondente à habilidade e renderiza apenas quando ele estiver cadastrado.
+                                const Icon = skillIcons[skill];
 
-                    })}
-                </div>
-            ))}
- 
+                                return (
+                                    <span key={skill} className={styles.skill}>
+                                        {Icon && <Icon />}
+                                        {skill}
+                                    </span>
+                                );
+                            })}
+                        </div>
+                    </div>
+                );
+            })}
         </section>
-    )
+    );
 }
 
 export default Skills
