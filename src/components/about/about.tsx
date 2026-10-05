@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 function About() {
     return (
@@ -44,6 +45,33 @@ function About() {
                         que já construí ao longo da minha trajetória às novas habilidades
                         que venho desenvolvendo em programação.
                     </p>
+
+                    <div className={styles.contactLinks}>
+                        <a
+                            href="https://www.linkedin.com/in/isabellelandini/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Linkedin"
+                        >
+                            <FaLinkedin />
+                        </a>
+
+                        <a
+                            href="https://github.com/IsabelleLandini"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            <FaGithub />
+                        </a>
+
+                        <a
+                            href="mailto:isa_landini@hotmail.com"
+                            aria-label="E-mail"
+                        >
+                            <FaEnvelope />
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>         

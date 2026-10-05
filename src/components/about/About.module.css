@@ -35,3 +35,24 @@
     line-height: 1.7;
     margin-bottom: 20px;
 }
+
+.contactLinks {
+    display: flex;
+    gap: 12px;
+}
+
+.contactLinks a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #A855f7;
+    border-radius: 6px;
+    color: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.contactLinks a:hover {
+    transform: translateY(-5px);
+}
