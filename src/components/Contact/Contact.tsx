@@ -1,34 +1,45 @@
+import styles from "./Contact.module.css";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 function Contact() {
     return (
         <section id="contact">
-            <h2>Contato</h2>
+            <h2 className={styles.title}>Contato</h2>
 
-            <p>
-               <a href="mailto:isa_landini@hotmail.com">E-mail</a>
-            </p>
+            <div className={styles.contactCards}>
+               <a 
+                href="mailto:isa_landini@hotmail.com"
+                className={styles.contactCard}
+                >
+                    <FaEnvelope />
+                    E-mail
+                </a>
 
-            <p>
                 <a 
                     href="https://www.linkedin.com/in/isabellelandini/" 
+                    className={styles.contactCard}
                     target="_blank" 
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                >
+                    <FaLinkedin />
                     LinkedIn
                 </a>
-            </p>
 
-            <p>
                 <a 
                     href="https://github.com/IsabelleLandini" 
+                    className={styles.contactCard}
                     target="_blank" 
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                >
+                    <FaGithub />
                     GitHub
                 </a>
-            </p>
+            </div>
 
-            <p>
-                📍 Guaratinguetá - SP
-            </p>
+            <footer className={styles.footerInfo}>
+                <p>© {new Date().getFullYear()} Isabelle Landini</p>
+                <p>Desenvolvedora Backend Python Júnior | Full Stack</p>
+            </footer>
         </section>
     )
 }
