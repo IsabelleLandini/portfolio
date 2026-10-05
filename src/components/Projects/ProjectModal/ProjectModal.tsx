@@ -1,6 +1,7 @@
 import projects from "../../../data/projects";
 import styles from "./ProjectModal.module.css";
 import { FaTimes, FaGithub } from "react-icons/fa";
+import { useEffect } from "react";
 
 type Project = (typeof projects)[number];
 
@@ -13,6 +14,21 @@ function ProjectModal({
     project,
     onClose
 }: ProjectModalProps) {
+    useEffect(() => {
+        function lidarComTeclado(event: KeyboardEvent) {
+            if (event.key === "Escape") {
+                onClose();
+            }
+        }
+
+        document.addEventListener("keydown", lidarComTeclado);
+
+        // Remove o evento ao fechar o modal.
+        return () => {
+            document.removeEventListener("keydown", lidarComTeclado);
+        };
+    }, [onClose]);
+
     return (
         <div className={styles.overlay}>
             <div className={styles.modal}>
