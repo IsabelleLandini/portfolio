@@ -52,6 +52,7 @@ import type { IconType } from "react-icons";
 
 import styles from "./Skills.module.css"
 
+// Associa cada habilidade ao ícone correspondente para facilitar a renderização dinâmica.
 const skillIcons: Record<string, IconType> = {
     Python: FaPython,
     JavaScript: FaJs,

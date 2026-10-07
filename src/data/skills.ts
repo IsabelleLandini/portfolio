@@ -1,4 +1,4 @@
-
+// Centraliza as habilidades exibidas na seção de Habilidades.
 const skills = {
     linguagens: [
         "Python",

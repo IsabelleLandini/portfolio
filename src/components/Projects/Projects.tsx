@@ -5,6 +5,7 @@ import { useState } from "react";
 import ProjectModal from "./ProjectModal/ProjectModal"
 
 function Projects() {
+    // Controla o projeto selecionado para exibir seus detalhes no modal
     const [selectedProject, setSelectedProject] = useState<(typeof projects)[number] | null>(null);
     
     return(
@@ -27,6 +28,7 @@ function Projects() {
                 ))}
             </div>
 
+            {/* Exibe o modal somente quando um projeto foi selecionado */}
             {selectedProject && (
                 <ProjectModal
                     project={selectedProject}

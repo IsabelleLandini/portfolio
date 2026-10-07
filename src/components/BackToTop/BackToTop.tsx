@@ -7,6 +7,7 @@ function VoltarAoTopo() {
 
     useEffect(() => {
         function lidarComRolagem() {
+            // Exibe o botão somente após o usuário rolar mais de 300 pixels.
             setEstaVisivel(window.scrollY > 300);
         }
 
@@ -21,6 +22,7 @@ function VoltarAoTopo() {
     function rolarParaOTopo() {
         window.scrollTo({
             top:0,
+            // Retorna ao topo da página com rolagem suave.
             behavior: "smooth"
         });
     }

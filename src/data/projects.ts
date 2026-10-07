@@ -1,4 +1,4 @@
-
+// Centraliza os dados dos projetos utilizados nos cards e no modal.
 const projects = [
     {
         title: "Portal Viagens",

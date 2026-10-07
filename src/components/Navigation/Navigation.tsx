@@ -9,6 +9,7 @@ function Navigation() {
                 <p>Desenvolvedora Backend Python Júnior | Full Stack</p>
             </div>
 
+            {/* Usa âncoras para navegar diretamente entre as seções da página */}
             <div className={styles.links}>
                 <a href="#about">Sobre Mim</a>
                 <a href="#projects">Projetos</a>

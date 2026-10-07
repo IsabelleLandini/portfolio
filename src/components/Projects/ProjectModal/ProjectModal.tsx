@@ -14,6 +14,7 @@ function ProjectModal({
     project,
     onClose
 }: ProjectModalProps) {
+    // Permite fechar o modal ao pressionar a tecla Esc.
     useEffect(() => {
         function lidarComTeclado(event: KeyboardEvent) {
             if (event.key === "Escape") {
@@ -59,7 +60,7 @@ function ProjectModal({
 
 
                 <h3>Funcionalidades</h3>
-                {/* Percorre as funcionalidades do projeto e cria um item para cada uma */}
+                {/* Exibe cada funcionalidade do projeto como um item da lista */}
                 <ul className={styles.features}>
                     {project.features.map((feature) => (
                         <li key={feature}>{feature}</li>

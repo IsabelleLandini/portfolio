@@ -10,6 +10,7 @@ function App() {
 
   return (
     <main>
+      {/* Organiza as principais seções do portfólio na ordem de exibição. */}
       <Navigation />
 
       <About />

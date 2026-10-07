@@ -20,6 +20,7 @@ function ProjectCard({
     github,
     onViewDetails
 }: ProjectCardProps) {
+    // Limita as tecnologias exibidas no card e calcula quantas ficaram ocultas
     const visibleTechnologies = technologies.slice(0, 5);
     const remainingTechnologies = technologies.length - visibleTechnologies.length;
 
@@ -52,6 +53,7 @@ function ProjectCard({
                                 </span>
                         ))}
 
+                        {/* Exibe a quantidade de tecnologias que não couberam no card */}
                         {remainingTechnologies > 0 && (
                             <span className={styles.technology}>
                                 +{remainingTechnologies}

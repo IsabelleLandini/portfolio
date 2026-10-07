@@ -37,6 +37,7 @@ function Contact() {
             </div>
 
             <footer className={styles.footerInfo}>
+                {/* Atualiza automaticamente o ano exibido no rodapé */}
                 <p>© {new Date().getFullYear()} Isabelle Landini</p>
                 <p>Desenvolvedora Backend Python Júnior | Full Stack</p>
             </footer>

@@ -7,6 +7,7 @@ function About() {
             {/* Agrupa a foto e o conteúdo para organizar o layout da seção */}
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutImage}>
+                    {/* Carrega a foto de perfil diretamente da pasta pública do projeto */}
                     <img 
                         src="/images/profile/isabelle.jpeg" 
                         alt="Foto de Isabelle Landini" 
