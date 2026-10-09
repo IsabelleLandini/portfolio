@@ -6,7 +6,7 @@ O projeto foi desenvolvido com React e TypeScript, utilizando uma estrutura de c
 
 ## 🌐 Portfólio online
 
-🔗 **[[Acesse o portfólio](https://isabellelandini-portfolio.vercel.app)]**
+🔗 [Acesse o portfólio](https://isabellelandini-portfolio.vercel.app)
 
 
 ## Sobre o projeto
