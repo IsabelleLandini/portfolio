@@ -35,6 +35,7 @@ function VoltarAoTopo() {
         <button 
             onClick={rolarParaOTopo}
             className={styles.backToTop}
+            aria-label="Voltar ao topo"
         >
             <FaArrowUp />
         </button>
