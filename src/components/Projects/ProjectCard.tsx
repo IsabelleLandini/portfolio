@@ -8,7 +8,7 @@ interface ProjectCardProps {
     technologies: string[]
     image: string
     github: string
-    onViewDetails: () => void
+    onViewDetails: (button: HTMLButtonElement) => void
 }
 
 function ProjectCard({
@@ -63,7 +63,7 @@ function ProjectCard({
 
                     <div className={styles.links}>
 
-                        <button onClick={onViewDetails}>
+                        <button onClick={(event) => onViewDetails(event.currentTarget)}>
                             Detalhes
                         </button>
 

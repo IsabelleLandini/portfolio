@@ -1,12 +1,19 @@
 import ProjectCard from "./ProjectCard";
 import projects from "../../data/projects";
 import styles from "./Projects.module.css";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import ProjectModal from "./ProjectModal/ProjectModal"
 
 function Projects() {
     // Controla o projeto selecionado para exibir seus detalhes no modal
     const [selectedProject, setSelectedProject] = useState<(typeof projects)[number] | null>(null);
+    const botaoQueAbriuModal = useRef<HTMLButtonElement | null>(null);
+
+    useEffect(() => {
+        if (selectedProject === null && botaoQueAbriuModal.current) {
+            botaoQueAbriuModal.current.focus();
+        }
+    }, [selectedProject]);
     
     return(
         <section id="projects" className={styles.projects}>
@@ -23,7 +30,10 @@ function Projects() {
                         technologies={project.technologies}
                         image={project.image}
                         github={project.github}
-                        onViewDetails={() => setSelectedProject(project)}
+                        onViewDetails={(button) => {
+                            botaoQueAbriuModal.current = button;
+                            setSelectedProject(project);
+                        }}
                     />
                 ))}
             </div>
