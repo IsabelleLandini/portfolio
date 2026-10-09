@@ -59,13 +59,17 @@ function ProjectModal({
     }, []);
 
     return (
-        <div className={styles.overlay}>
+        <div 
+            className={styles.overlay}
+            onClick={onClose}
+        >
             <div 
                 ref={modalRef}
                 className={styles.modal}
                 role="dialog"
                 aria-modal="true"
                 aria-labelledby="project-modal-title"
+                onClick={(event) => event.stopPropagation()}
             >
                 <div className={styles.modalHeader}>
                     <h2 id="project-modal-title">{project.title}</h2>
