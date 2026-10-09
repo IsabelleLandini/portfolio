@@ -1,7 +1,7 @@
 import projects from "../../../data/projects";
 import styles from "./ProjectModal.module.css";
 import { FaTimes, FaGithub } from "react-icons/fa";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 type Project = (typeof projects)[number];
 
@@ -14,11 +14,34 @@ function ProjectModal({
     project,
     onClose
 }: ProjectModalProps) {
+    const closeButtonRef = useRef<HTMLButtonElement>(null);
+    const modalRef = useRef<HTMLDivElement>(null);
+
     // Permite fechar o modal ao pressionar a tecla Esc.
     useEffect(() => {
         function lidarComTeclado(event: KeyboardEvent) {
             if (event.key === "Escape") {
                 onClose();
+                return;
+            }
+
+            if (event.key === "Tab") {
+                const elementosFocaveis = modalRef.current?.querySelectorAll<HTMLElement>(
+                    'button, a[href]'
+                );
+
+                if (!elementosFocaveis?.length) return;
+
+                const primeiro = elementosFocaveis[0];
+                const ultimo = elementosFocaveis[elementosFocaveis.length -1];
+
+                if (event.shiftKey && document.activeElement === primeiro) {
+                    event.preventDefault();
+                    ultimo.focus();
+                } else if (!event.shiftKey && document.activeElement === ultimo) {
+                        event.preventDefault();
+                    primeiro.focus();
+                }
             }
         }
 
@@ -30,11 +53,22 @@ function ProjectModal({
         };
     }, [onClose]);
 
+    // Direciona o foco para o botão Fechar quando o modal abrir.
+    useEffect(() => {
+        closeButtonRef.current?.focus();
+    }, []);
+
     return (
         <div className={styles.overlay}>
-            <div className={styles.modal}>
+            <div 
+                ref={modalRef}
+                className={styles.modal}
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="project-modal-title"
+            >
                 <div className={styles.modalHeader}>
-                    <h2>{project.title}</h2>
+                    <h2 id="project-modal-title">{project.title}</h2>
 
                     <p className={styles.date}>{project.date}</p>
                 </div>
@@ -89,7 +123,8 @@ function ProjectModal({
                     )}
                 </div>
 
-                <button 
+                <button
+                    ref={closeButtonRef} 
                     className={styles.closeButton}
                     onClick={onClose}
                     aria-label="Fechar"
