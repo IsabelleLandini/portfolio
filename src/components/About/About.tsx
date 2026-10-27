@@ -19,32 +19,25 @@ function About() {
                     <h2>Sobre Mim</h2>
 
                     <p>
-                        Estou em transição de carreira para a área de tecnologia,
-                        iniciando uma nova etapa da minha trajetória profissional.
-                        Sou formada em Publicidade e Propaganda, pós-graduada em
-                        Administração de Marketing e também cursei Administração.
-                        Ao longo da minha formação e experiência, desenvolvi diferentes
-                        conhecimentos que agora levo comigo para esse novo caminho.
+                       Sou desenvolvedora com foco em Backend Python, com formação na área 
+                       e experiência prática em projetos utilizando Python, FastAPI, SQLAlchemy 
+                       e bancos de dados SQL. Desenvolvo APIs REST, implementando operações CRUD, 
+                       validação de dados, autenticação e integração com serviços externos.
                     </p>
 
                     <p>
-                        Há pouco mais de um ano, comecei a me dedicar aos estudos
-                        em tecnologia e encontrei no desenvolvimento de software
-                        uma área na qual quero construir minha carreira. Atualmente,
-                        estou me formando em Full Stack Python pela EBAC e venho
-                        colocando o aprendizado em prática por meio de projetos,
-                        explorando tecnologias como Python, FastAPI, APIs, bancos
-                        de dados, React, TypeScript e Next.js, além de ferramentas
-                        como Git e Docker.
+                        Ao longo dos meus estudos, desenvolvi projetos que envolvem persistência
+                        de dados, testes automatizados e ferramentas como Git, GitHub e Docker. 
+                        Também possuo conhecimentos em React, TypeScript e Next.js, que complementam 
+                        minha atuação e ampliam minha compreensão do desenvolvimento Full Stack.  
                     </p>
 
                     <p>
-                        Minha transição está sendo construída de forma prática e
-                        contínua: estudo, desenvolvo projetos, enfrento novos desafios
-                        e busco evoluir a cada etapa. Meu objetivo é transformar essa
-                        nova formação em uma carreira na tecnologia, unindo os conhecimentos
-                        que já construí ao longo da minha trajetória às novas habilidades
-                        que venho desenvolvendo em programação.
+                        Estou em transição de carreira para a área de tecnologia. Sou formada em Publicidade 
+                        e Propaganda, tenho pós-graduação em Administração de Marketing e também cursei Administração. 
+                        Essa trajetória contribuiu para desenvolver habilidades de comunicação, organização e resolução 
+                        de problemas. Atualmente, busco minha primeira oportunidade como Desenvolvedora 
+                        Backend Python Júnior, unindo minha experiência anterior aos conhecimentos adquiridos em tecnologia.
                     </p>
 
                     <div className={styles.contactLinks}>
