@@ -131,7 +131,7 @@ const projects = [
             "Orquestração dos serviços com Docker Compose.",
             "Persistência do banco de dados por meio de volumes."
         ],
-        image: "/images/projects/api-tarefas.png",
+        image: "/images/projects/api-tarefas.jpg",
         screenshot: "/images/projects/api-tarefas-screenshot.png",
         github: "https://github.com/IsabelleLandini/api-tarefas-fastapi"
     },
