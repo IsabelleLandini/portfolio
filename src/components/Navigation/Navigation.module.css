@@ -41,23 +41,29 @@
 @media (max-width: 600px) {
     .navigation {
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+        gap: 16px;
+        padding: 16px;
+        width: 100%;
     }
     .identity {
         width: 100%;
         text-align: center;
     }
 
+    .identity h1 {
+        font-size: 1.6rem;
+    }
+
     .identity p {
         white-space: normal;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .links {
-        gap: 16px;
+        gap: 12px;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
     }
 }
 

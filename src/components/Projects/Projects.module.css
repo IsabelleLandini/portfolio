@@ -22,6 +22,9 @@
 }
 
 @media (max-width: 600px) {
+    .projects {
+        padding: 16px;
+    }
     .projectGrid {
         grid-template-columns: 1fr;
     }

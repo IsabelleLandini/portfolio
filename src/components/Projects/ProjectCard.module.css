@@ -134,3 +134,11 @@
         margin-top: 4px;
     }
 }
+
+@media (max-width: 320px) {
+    .coverImage {
+        height: 140px;
+        object-fit: contain;
+        border-radius: 12px;
+    }
+}

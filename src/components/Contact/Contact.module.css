@@ -40,5 +40,23 @@
 @media (max-width: 600px) {
     .footerInfo{
         font-size: 0.85rem;
+        padding-left: 12px;
+        padding-right: 12px;
+        box-sizing: border-box;
+    }
+
+    .contactCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contactCard {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        box-sizing: border-box;
     }
 }
